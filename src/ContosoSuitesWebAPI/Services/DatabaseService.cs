@@ -113,7 +113,7 @@ public class DatabaseService(string connectionString) : IDatabaseService
 
 
     [KernelFunction]
-    [Description("GetBookingsMissingHotelRooms.")]
+    [Description("Get Bookings Missing Hotel Rooms.")]
     public async Task<IEnumerable<Booking>> GetBookingsMissingHotelRooms()
     {
         var sql = """
@@ -158,7 +158,7 @@ public class DatabaseService(string connectionString) : IDatabaseService
     }
 
     [KernelFunction]
-    [Description("GetBookingsWithMultipleHotelRooms")]
+    [Description("Get Bookings With Multiple Hotel Rooms")]
     public async Task<IEnumerable<Booking>> GetBookingsWithMultipleHotelRooms()
     {
         var sql = """
